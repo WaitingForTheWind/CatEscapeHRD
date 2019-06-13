@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/select"
+    android:gravity="center"
+    tools:context="com.liu.dell.huarongdao.SelectActivity">
+
+    <LinearLayout style="@style/select_row">
+        <TextView
+            android:id="@+id/turn1"
+            style="@style/select_item"
+            android:text="@string/turn1_text" />
+
+        <TextView
+            android:id="@+id/turn2"
+            style="@style/select_item"
+            android:text="@string/turn2_text" />
+
+        <TextView
+            android:id="@+id/turn3"
+            style="@style/select_item"
+            android:text="@string/turn3_text" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/select_row">
+        <TextView
+            android:id="@+id/turn4"
+            style="@style/select_item"
+            android:text="@string/turn4_text" />
+
+        <TextView
+            android:id="@+id/turn5"
+            style="@style/select_item"
+            android:text="@string/turn5_text" />
+
+        <TextView
+            android:id="@+id/turn6"
+            style="@style/select_item"
+            android:text="@string/turn6_text" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/select_row">
+        <TextView
+            android:id="@+id/turn7"
+            style="@style/select_item"
+            android:text="@string/turn7_text" />
+
+        <TextView
+            android:id="@+id/turn8"
+            style="@style/select_item"
+            android:text="@string/turn8_text" />
+
+        <TextView
+            android:id="@+id/turn9"
+            style="@style/select_item"
+            android:text="@string/turn9_text" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/select_row">
+        <TextView
+            android:id="@+id/turn10"
+            android:text="@string/turn10_text"
+            style="@style/select_item" />
+        <TextView
+            android:id="@+id/turn11"
+            android:text="@string/turn11_text"
+            style="@style/select_item" />
+        <TextView
+            android:id="@+id/turn12"
+            android:text="@string/turn12_text"
+            style="@style/select_item" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/select_row">
+
+        <TextView
+            android:id="@+id/turn13"
+            style="@style/select_item"
+            android:text="@string/turn13_text" />
+
+        <TextView
+            android:id="@+id/turn14"
+            style="@style/select_item"
+            android:text="@string/turn14_text" />
+
+        <TextView
+            android:id="@+id/turn15"
+            style="@style/select_item"
+            android:text="@string/turn15_text" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/select_row">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/block_background"
+            android:onClick="backToHome"
+            app:srcCompat="@drawable/home" />
+    </LinearLayout>
+
+</LinearLayout>

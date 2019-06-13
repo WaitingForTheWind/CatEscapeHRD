@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liu.dell.huarongdao.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/display_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_time_text"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/pass_background"/>
+
+        <TextView
+            android:id="@+id/turn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_turn_text"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/step_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_step_text"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/pass_background"/>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/board_background">
+
+        <ImageButton
+            android:id="@+id/image1"
+            app:srcCompat="@drawable/cat"
+            style="@style/block_style" />
+
+        <ImageButton
+            android:id="@+id/image2"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageButton
+            android:id="@+id/image3"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageButton
+            android:id="@+id/image4"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageButton
+            android:id="@+id/image5"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageButton
+            android:id="@+id/image6"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageButton
+            android:id="@+id/image7"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageButton
+            android:id="@+id/image8"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageButton
+            android:id="@+id/image9"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageButton
+            android:id="@+id/image10"
+            style="@style/block_style"
+            app:srcCompat="@drawable/cat" />
+
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+        android:id="@+id/exitleft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        app:srcCompat="@drawable/exitleft" />
+
+        <ImageButton
+        android:id="@+id/exitright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        app:srcCompat="@drawable/exitright" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pass_background"
+            android:text="@string/button_before_text"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:onClick="startLastGame" />
+
+        <Button
+            android:id="@+id/button_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pass_background"
+            android:text="@string/button_init_text"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:onClick="restartGame" />
+
+        <Button
+            android:id="@+id/button_revert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pass_background"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/button_revert_text"
+            android:layout_weight="1"
+            android:onClick="revertOneStep" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pass_background"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/button_next_text"
+            android:layout_weight="1"
+            android:onClick="startNextGame" />
+    </LinearLayout>
+</RelativeLayout>

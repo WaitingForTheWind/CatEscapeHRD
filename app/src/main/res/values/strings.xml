@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">猫咪脱险记</string>
+    <string name="game_start_text">开始游戏</string>
+    <string name="game_activity">Game Activity</string>
+    <string name="pass_title_text">成功脱险</string>
+    <string name="picture_title_description">Picture Title!</string>
+    <string name="pass_content_text1">用时：10秒</string>
+    <string name="pass_content_text2">步数：100步</string>
+    <string name="button_cancel_text">取消</string>
+    <string name="button_next_text">下一关</string>
+    <string name="button_before_text">上一关</string>
+    <string name="button_init_text">重置</string>
+    <string name="button_revert_text">回退</string>
+    <string name="initial_step_text">步数：0步</string>
+    <string name="turn1_text">新手上路</string>
+    <string name="turn2_text">小试牛刀</string>
+    <string name="turn3_text">初露锋芒</string>
+    <string name="turn4_text">渐入佳境</string>
+    <string name="turn5_text">横刀立马</string>
+    <string name="turn6_text">齐头并前</string>
+    <string name="turn7_text">兵分三路</string>
+    <string name="turn8_text">屯兵东路</string>
+    <string name="turn9_text">猛过五关</string>
+    <string name="turn10_text">左右布兵</string>
+    <string name="turn11_text">前挡后阻</string>
+    <string name="turn12_text">插翅难飞</string>
+    <string name="turn13_text">近在咫尺</string>
+    <string name="turn14_text">层层设防</string>
+    <string name="turn15_text">小燕出巢</string>
+    <string name="game_description">游戏介绍</string>
+    <string name="description">
+        \t\t猫咪被困住了，快来帮助猫咪脱险吧。路途中有狮子、狗的围追堵截，还有小石子的干扰。你是否能将猫咪安全带到出口呢？
+        \n\n游戏目标：
+        \n\t\t请尽可能以最短的时间和最少的步数将猫咪对应的滑块拖动到出口处。游戏过程中，不允许跨越滑块进行移动。
+        \n\n游戏指南：
+        \n\t\t点击游戏中的角色，滑动对应的滑块，进行闯关。
+        \n\n小tip：华容道。
+    </string>
+    <string name="initial_time_text">时间：0秒</string>
+    <string name="initial_turn_text">第1关</string>
+</resources>
